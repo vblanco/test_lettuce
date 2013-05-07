@@ -9,6 +9,7 @@ env:
   - DJANGO=1.4.3 #DJANGO_SETTINGS_MODULE="mysite.travis_settings"
 install:
   - pip install -q Django==$DJANGO --use-mirrors
+  - pip install -q lettuce --use-mirrors
   # - pip install pep8 --use-mirrors
   # - pip install mysql-python --use-mirrors
   # - pip install https://github.com/dcramer/pyflakes/tarball/master
