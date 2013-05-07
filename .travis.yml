@@ -11,8 +11,8 @@ install:
   - pip install -q Django==$DJANGO --use-mirrors
   - pip install -q lettuce --use-mirrors
   - pip install -q lxml --use-mirrors
-  - pip install -q urllib2 --use-mirrors
-  - pip install -q nosetools --use-mirrors
+  - pip install -q urllib3 --use-mirrors
+  - pip install -q nose --use-mirrors
   # - pip install pep8 --use-mirrors
   # - pip install mysql-python --use-mirrors
   # - pip install https://github.com/dcramer/pyflakes/tarball/master
