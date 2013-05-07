@@ -17,6 +17,8 @@ install:
   # - pip install mysql-python --use-mirrors
   # - pip install https://github.com/dcramer/pyflakes/tarball/master
   # - pip install -q -e . --use-mirrors
+  #
+  # Fix problem with python and threads in Travis workers
   - "sudo rm -rf /dev/shm && sudo ln -s /run/shm /dev/shm"
 before_script:
 #   - "pep8 --exclude=migrations --ignore=E501,E225 src"
@@ -25,3 +27,4 @@ before_script:
   # - python manage.py syncdb --noinput
 script:
   - python manage.py harvest --no-server
+  - python manage.py test   
